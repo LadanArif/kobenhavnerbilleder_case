@@ -1,5 +1,32 @@
 ---
 ---
-<div>
-Header - tilføj navigation mm.
+<div class="pb-12">
+    <div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full bg-white" >
+        <div id="navbar" class="flex flex-row justify-between">
+        <div id="logo" class="">
+        <a href="#link1">Site logo</a>
+        </div>
+        <nav id="desktopmenu" class="hidden lg:block">
+        <ul class="flex flex-row gap-4">
+            <a class = "nav-link" href ="#afsnit_1">Københavnerbilleder</a>
+            <a class = "nav-link" href="#afsnit_2">Bogens indhold</a>
+            <a class = "nav-link" href="#afsnit_3">Forfatteren</a>
+            <a class = "nav-link" href="#afsnit_4">Køb nu</a>
+        </ul>
+        </nav>
+        <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+          </svg>
+          </button>
+        </div>
+        <nav id="mobilmenu" class="flex flex-col content-center pt-4 z-auto"  
+        x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+        <ul >
+        <li class="text-left py-2 border-y-2"><a href="#afsnit_1" >Københavnerbilleder</a></li>
+        <li class="text-left py-2 border-b-2"><a href="#afsnit_2" >Bogens indhold</a></li>
+        <li class="text-left py-2 border-b-2"><a href="#afsnit_3" >Forfatteren</a></li>
+        <li class="text-left py-2 border-b-2"><a href="#afsnit_4" >Køb nu</a></li>
+        </ul>
+        </nav>
+        </div>
 </div>
