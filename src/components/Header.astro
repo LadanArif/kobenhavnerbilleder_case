@@ -1,7 +1,7 @@
 ---
 ---
 <div class="pb-12">
-    <div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full bg-white" >
+    <div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full bg-white  z-50" >
         <div id="navbar" class="flex flex-row justify-between">
         <div id="logo" class="">
         <a href="#link1">Site logo</a>
@@ -19,7 +19,7 @@
           </svg>
           </button>
         </div>
-        <nav id="mobilmenu" class="flex flex-col content-center pt-4 z-auto"  
+        <nav id="mobilmenu" class="flex flex-col content-center pt-4"  
         x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
         <ul >
         <li class="text-left py-2 border-y-2"><a href="#afsnit_1" >Københavnerbilleder</a></li>
