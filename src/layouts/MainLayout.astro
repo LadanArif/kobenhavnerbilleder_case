@@ -12,7 +12,7 @@ import 'animate.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>Københavnerbilleder</title>
 	</head>
-	<body>
+	<body class="bg-white">
 
 		<header>
 			<Header></Header>
@@ -28,3 +28,11 @@ import 'animate.css';
 			
 	</body>
 </html>
+<!-- <script>
+	import { inView } from "motion";
+
+	const knapslide = document.querySelector(".knapslide");
+	inView(knapslide, () => {
+		knapslide.classList.add("animate__animated", "animate__backInLeft animate__slow", "animate__delay-1s");
+	});	
+</script> -->

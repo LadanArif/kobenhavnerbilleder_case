@@ -6,23 +6,79 @@ import Link from '../components/Link.astro';
 <MainLayout title="Titel">
 
 	<article id="afsnit_1">
-		<section class="px-10 pt-12 grid md:grid-cols-5 md:px-10 md:pt-10 md:gap-6">
-			<img class="object-cover md:col-span-3 md:h-96 md:w-full md:object-cover" src="../../public/kobenhavnerbilleder_sten_simons.jpg" alt="">
-			<div class="md:col-span-2 grid content-center">
-				 <h1 class="font-bold pb-6 py-6">Kort om bogen</h1>
-				<p class="md:pr-10">Københavnerbilleder er de danske streetfotografers bibel: <br> Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!	 </p>
-			<div class="pt-8">
-				<Button>Download et prøvekapitel her!</Button>
-			</div>
-			</div>
-		</section>
+			<section class="px-10 pt-12 grid md:grid-cols-5 md:px-10 md:pt-10 md:pb-14">
+				<img class="object-cover md:col-span-3 md:h-96 md:w-full md:object-cover" src="../../public/kobenhavnerbilleder_sten_simons.jpg" alt="">
+				<div class="md:col-span-2 grid content-center">
+					 <h1 class="font-bold pb-6 py-6 text-black">Københavnerbilleder - en guide til hipster foto
+						af Sten Simons
+						</h1>
+					<p class=" text-black">Københavnerbilleder er de danske streetfotografers bibel: <br> Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!	 </p>
+				<div class="pt-8">
+					<Button>Download et prøvekapitel her!</Button>
+				</div>
+				</div>
+			</section>
+	
 	</article>
 		
 
 <!-- ------------------- afsnit 2 skal måske lave list type / en liste form -->
 
-		<section class="px-10 pb-8 pt-12 md:py-28">
-			<div class="md:grid grid-cols-2 md:text-center md:px-3.5">
+		<section class="pl-10 py-12 text-black md:text-center md:grid grid-cols-2 md:px-96 md:py-28">
+			<article class="">
+				<div class="pb-4">
+					<p class="font-bold">Titel:</p>
+					<p>Københavnerbilleder - en guide til hipster foto</p>
+				</div>
+				<div class="pb-4">
+					<p class="font-bold md:pb-1">Forfatter: <p>Sten Simons</p></p>
+				</div>
+				<div class="pb-4">
+					<p class="font-bold  md:pb-1">Antal sider: <p>344</p></p>
+				</div>
+			</article>
+			<article>
+				<div class="pb-4">
+					<p class="font-bold  md:pb-1">Forlag: <p>Mellem Linjerne </p></p>
+				</div>
+				<div class="pb-4">
+					<p class="font-bold  md:pb-1">ISBN: <p>87-6-987654-32-1</p> </p>
+				</div>
+				<div class="pb-4">
+					<p class="font-bold  md:pb-1">Pris: <p> 399.</p> </p>
+				</div>
+			</article>
+			<!-- opdeling for hver 3. opdel 3 i to articles  -->
+		</section>
+
+
+
+
+<!-- 
+		<div class=" md:grid grid-cols-2 md:text-center md:px-96 md:py-8">
+			<p class="font-semibold">Titel:</p>
+			<p class="pb-4">Københavnerbilleder - en guide til hipster foto</p>
+			
+			<p class="font-semibold">Forfatter:</p>
+			<p class="pb-4">Sten Simons</p>
+
+			<p class=" font-semibold">Antal sider:</p>
+			<p class="pb-4">344</p>
+
+			<p class="font-semibold">Forlag:</p>
+			<p class="pb-4">Mellem Linjerne</p>
+
+			<p class="font-semibold">ISBN:</p>
+			<p class="pb-4">987-6-987654-32-1</p>
+
+			<p class=" font-semibold">Pris: </p>
+			<p class="pb-4">399.-</p>
+			</div> -->
+
+
+
+<!-- <section class="px-10 pb-8 pt-12 md:pb-20 md:pt-20">
+			<div class="md:grid grid-cols-2 md:text-center md:px-96">
 				<p class="font-semibold">Titel:</p>
 				<p class="pb-4">Københavnerbilleder - en guide til hipster foto</p>
 				
@@ -41,12 +97,12 @@ import Link from '../components/Link.astro';
 				<p class=" font-semibold">Pris: </p>
 				<p class="pb-4">399.-</p>
 			</div>
-		</section>
+		</section> -->
 
 
 <!-- ------------------- afsnit 3 -->
-	<section class="px-10 md:grid grid-cols-3 md:gap-4 md:px-36">
-		<img class="pb-8 h-full w-full object-cover" src="../../public/kobenhavnerbilleder_sten_simons.jpg" alt="">
+	<section class="px-10 md:grid grid-cols-3 md:gap-4 md:px-36 md:pb-14 ">
+		<img class="pb-8 h-full w-full object-cover md:transition transform hover:-translate-y" src="../../public/kobenhavnerbilleder_sten_simons.jpg" alt="">
 		<img class="pb-8 h-full w-full object-cover" src="../../public/kobenhavnerbilleder_aaben_venstre.jpg" alt="">
 		<img class="pb-8 h-full w-full object-cover" src="../../public/kobenhavnerbilleder_oppefra.jpg" alt="">
 	</section>
@@ -54,39 +110,39 @@ import Link from '../components/Link.astro';
 <!-- ------------------- afsnit 4 -->
 	
 	<article id="afsnit_2">
-		<section class="px-10 pt-6 md:px-36">
+		<section class="px-10 pt-6 md:px-36 text-black">
 			<h1 class="font-bold pb-6">Kapitlerne</h1>
-			<div class="md:grid grid-cols-2 md: gap-8">
-				<div class="pb-6">
+			<div class="md:grid grid-cols-2 md: gap-8 ">
+				<div class="pb-6 transition transform hover:-translate-y-1 rounded-xl">
 					<h3 class="font-semibold">Kapitel 1 - Intro til street foto</h3>
 					<p>Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry). I dette kapitel får du en grundig intro til hvad street foto er og et overblik over nogen af de kendte street-fotografer. Alt krydret med en masse gode eksempler på street fotos.
 					</p>
 				</div>
-				<div class="pb-6">
+				<div class="pb-6 transition transform hover:-translate-y-1">
 					<h3 class="font-semibold">Kapitel 2 - Om at skyde street</h3>
 					<p>Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på gaderne og prøve det! I dette kapitel får du en teknisk indføring i hvordan du bedst skyder street. Uanset om du er begynder eller professionel, er der mange gode tekniske tips og tricks til street-skyderiet.</p>
 				</div>
-				<div class="pb-6">
+				<div class="pb-6 transition transform hover:-translate-y-1">
 					<h3 class="font-semibold">Kapitel 3 - Om at finde det rette motiv</h3>
 					<p>Indimellem er man heldig, andre gange kommer man hjem helt uden gode motiver. Med et par tips og tricks til at finde de rette motiver, stiger chancen gevaldigt for at fange de gode motiver.</p>
 				</div>
-				<div class="pb-6">
+				<div class="pb-6 transition transform hover:-translate-y-1">
 					<h3 class="font-semibold">Kapitel 4 - Digital street foto</h3>
 					<p>De fleste af os skyder oftest digitalt fordi det er billigere og nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til digital street foto. I dette kapitel får du en række tips og tricks til digital street-foto. </p>
 				</div>
-				<div class="pb-6">
+				<div class="pb-6 transition transform hover:-translate-y-1">
 					<h3 class="font-semibold">Kapitel 5 - Analog street foto</h3>
 					<p>Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt end digital. Det signalerer entusiasme. Nogle teknikker og fremgangsmåder egner sig bedst til analog street foto. I dette kapitel får du en række tips og tricks til analog street-foto. </p>
 				</div>
-				<div class="pb-6">
+				<div class="pb-6 transition transform hover:-translate-y-1">
 					<h3 class="font-semibold">Kapitel 6 - Om at skyde sort/hvid</h3>
 					<p>Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad adskiller sort/hvid fra farvefotografering? Her får du en række tips og tricks til sort/hvid fotografering. </p>
 				</div>
-				<div class="pb-6">
+				<div class="pb-6 transition transform hover:-translate-y-1">
 					<h3 class="font-semibold">Kapitel 7 - Kreative teknikker </h3>
 					<p>Dobbelteksponeringer, ICM (intentional camera moves), smadrede objektiver, gamle filmruller og alle mulige andre, spændende kreative teknikker kan løfte dine fotografier fra at være kedelige dokumentationer af hverdagen til at blive vilde kunststykker. Så dyk ned i dette kapitel om eksperimenterende teknikker!</p>
 				</div>
-				<div class="pb-6">
+				<div class="pb-6 transition transform hover:-translate-y-1">
 					<h3 class="font-semibold">Kapitel 8 - Kom helt tæt på!</h3>
 					<p>Street foto handler om at fotografere livet på gaden - men tør du at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt øve dig, for det er det der vil gøre dig til en bedre street-fotograf…</p>
 				</div>
@@ -98,73 +154,76 @@ import Link from '../components/Link.astro';
 <!-- ------------------- afsnit 5 skal måske være i flex box -->
 
 	<section class="px-10 pb-10 pt-10 md:px-36 md:pt-20">
-		<h1 class="font-bold pb-4">Pressen siger</h1>
-		<div class=" md:grid grid-cols-3 gap-4">
-			<div class="py-6 md:pr-6">
-				<div class="flex space-x-2 md:pb-2">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+		<h1 class="font-bold pb-4 text-black">Pressen siger</h1>
+		<div class="md:grid grid-cols-3 gap-4 text-orange-700">
+			<div class="rounded-lg md:px-10 md:py-10">
+				<div class="py-4 md:py-4 animate__animated animate__fadeIn animate__slow">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">
 						<path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
 					  </svg>
 				</div>
-				<p>Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen. <br> <br> - Hanne Hovgaard, Berlingeren </p>
+				<p  class="text-orange-700">Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen.</p> <br>
+				<p class="text-orange-700">- Hanne Hovgaard, Berlingeren </p>
 			</div>
-			<div class="py-6 ">
-				<div class="flex space-x-2 md:pb-2">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+			<div class="rounded-lg md:px-10 md:py-10">
+				<div class="md:py-4 animate__animated animate__fadeIn animate__slow">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">
 						<path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
 					  </svg>
 				</div>
-				<p>Teksten er underholdende, og billederne er sku’ flotte. Hvad mere skal man sige om en fotobog? <br> <br> - Kim Kloggaard, Fotojournalen.dk</p>
+				<p class="text-orange-700">Teksten er underholdende, og billederne er sku’ flotte. Hvad mere skal man sige om en fotobog?</p> <br>
+				<p class="text-orange-700">- Kim Kloggaard, Fotojournalen.dk</p>
 			</div>
-			<div class="py-6">
-				<div class="flex space-x-2 pb-2">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+			<div class="rounded-lg md:px-10 md:py-10">
+				<div class="py-4 md:py-4 animate__animated animate__fadeIn animate__slow">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg>
-					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+					  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
 						<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
 					  </svg> 
 				</div>
-				<p>Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje fotobog er klart den bedste - her er han for alvor i sit rette element, meget bedre end “studiefotografering som begyndere.” Tillykke - godt arbejde. <br> <br> - Volmer Hansen, Lukkertiden.dk </p>
+				<p class="text-orange-700">Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje fotobog er klart den bedste - her er han for alvor i sit rette element, meget bedre end “studiefotografering som begyndere.” Tillykke - godt arbejde.</p> <br>
+				<p class="text-orange-700">- Volmer Hansen, Lukkertiden.dk </p>
 			</div>
 		</div>
 		
@@ -173,9 +232,9 @@ import Link from '../components/Link.astro';
 <!-- ------------------- afsnit 6 -->
 
 	<section class="px-4 md:px-28">
-		<h1 class="font-bold pl-6 pb-2"> Galleri</h1>
+		<h1 class="font-bold pl-6 pb-2 text-black"> Galleri</h1>
 		<div class="grid grid-cols-2 md:grid-cols-4 h-auto w-auto p-4 relative">
-				<img class="p-2 h-full w-full object-cover " src="../../public/img1.jpg" alt="">
+				<img class="p-2 h-full w-full object-cover" src="../../public/img1.jpg" alt="">
 				<img class="p-2 h-full w-full object-cover" src="../../public/img2.jpg" alt="">
 				<img class="p-2 h-full w-full object-cover" src="../../public/img3.jpg" alt="">
 				<img class="p-2 h-full w-full object-cover" src="../../public/img4.jpg" alt="">
@@ -193,10 +252,10 @@ import Link from '../components/Link.astro';
 	<!-- ------------------- afsnit 7 -->
 	<article id="afsnit_3">
 		<section class="px-10 pt-12 md:px-72 md:pt-24 md:pb-10">
-			<h1 class="font-bold pb-6">Forfatteren</h1>
+			<h1 class="font-bold pb-6 text-black">Forfatteren</h1>
 			<div class="h-72 w-auto relative md:grid grid-cols-2 md:gap-4">
 				<img class="h-full w-full object-cover md:object-cover md:h-96 md:w-96 md:pt-2" src="../../public/sten_simons.jpg" alt="">
-				<p class="pt-6 pb-10 md:pt-1">Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. <br> Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”
+				<p class="pt-6 pb-10 md:pt-1 text-black">Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. <br> Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”
 					<br> Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.</p>
 			</div>
 		</section>
@@ -205,8 +264,8 @@ import Link from '../components/Link.astro';
 <!-- ------------------- afsnit 8 -->
 	<article id="afsnit_4">
 		<section class="px-10 pt-80 md:px-96 md:relative md:pt-32">
-			<h1 class="font-bold pb-4 py-12">Køb Københavnerbilleder her!</h1>
-			<form class="">
+			<h1 class="font-bold pb-4 py-12 text-black">Køb Københavnerbilleder her!</h1>
+			<form class=" bg-white md:px-24 md:py-20 rounded-xl">
 				<div class="py-4">
 					<label for="antal">Antal</label>
 					<input type="number" class="rounded-md bg-gray-100 border-transparent w-full focus:bg-white"id="antal" placeholder="1">
@@ -250,10 +309,10 @@ import Link from '../components/Link.astro';
 				<div class="py-4">
 					<label for="checkboks"></label>
 					<input type="checkbox" id="checkboks"> Ja tak til nyhedsbreve og tilmeldning</div>
+					<div class="pt-4">
+						<Button>Køb Københavnerbilleder her! </Button>
+					</div>
 			</form>
-			<div class="pt-4">
-				<Button>Køb Københavnerbilleder her! </Button>
-			</div>
 		</section>
 
 	</article>
