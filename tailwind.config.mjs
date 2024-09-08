@@ -5,6 +5,10 @@ export default {
     extend: {
       backgroundImage: { pimg1: 'url("../public/img8.jpg")', pimg2: 'url("../public/img7.jpg")' },
     },
+    fontFamily: {
+      goblin: ["goblin", "serif"],
+      martel: ["martel", "sans-serif"],
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
 };
