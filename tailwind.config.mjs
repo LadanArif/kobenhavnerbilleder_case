@@ -3,7 +3,7 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      backgroundImage: { pimg1: 'url("../public/img8.jpg")', pimg2: 'url("../public/img7.jpg")' },
+      backgroundImage: { pimg1: 'url("/images/img8.webp")', pimg2: 'url("/images/img7.webp")' },
     },
     fontFamily: {
       goblin: ["goblin", "serif"],
